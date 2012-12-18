@@ -16,7 +16,7 @@ var myApp=UWheel.extend({
 		var tab=new UWTab('tab');
 		tab.addTab('mytab1','Tab1',null,null,true);
 		tab.addTab('mytab2','Tab2',null,new UWContainer('pepe').addChild(grid),false);
-		tab.size=UWSize(700,200);
+		tab.size=UWSize(700,250);
 		//Container
 		var container=new UWContainer('test');
 		//container.addChild(grid);

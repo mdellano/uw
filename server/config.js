@@ -5,11 +5,14 @@ config.path = './app';
 config.get = {
 	"/service":{
 		services:['/service/get']
+	},
+	"/fede": {
+		services:['/fede/daleloco.js','/service/get']
 	}
 };
 config.post = {};
 config.put = {};
-config.static=['../'];
+config.static=['../client/'];
 //Error
 config.error= "/service/error.js";
 //Port

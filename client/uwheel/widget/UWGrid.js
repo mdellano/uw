@@ -6,6 +6,7 @@ var UWGrid=UWWidget.extend({
 		this.config={
 			sorteable:true,
 			groupable:false,
+			height: '180px',
 			pageable: {
 				refresh:true,
 				pageSizes:true

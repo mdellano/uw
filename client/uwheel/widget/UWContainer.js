@@ -17,7 +17,13 @@ var UWContainer=UWWidget.extend({
 		return this;
 	},
 	attach:function(name,style) {
-		this.render(this._super(name,style));
-	}
+		var dv=this._super(name,style);
+        this.render(dv);
+        //Change the normal function for a new one that automatically reners the child
+	    this.addChild=function(child) {
+            child.render(dv);
+        }
+
+    }
 }
 );

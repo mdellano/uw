@@ -19,7 +19,7 @@ function UWData(text,icon,data) {
     this.items=[];
 
     this.addData=function(text,icon,data) {
-        this.items.push(new UWData(text,icon,data);
+        this.items.push(new UWData(text,icon,data));
     }
 
 }
@@ -234,36 +234,21 @@ function UWData(text,icon,data) {
             resize();
 
 
-            var data=[
-                {text:''}
-
-
-            ];
-
-
+            var data=new UWData('Proyecto','','');
+            data.addData('Scenes','');
+            data.addData('Actors','');
+            data.addData('Actions','');
 
 
 
 
-
-            var local = new kendo.data.HierarchicalDataSource({
-                        data:_data,
-                        schema: {
-                            model: {
-                                id: "b",
-                                children:"lst",
-                                hasChildren: "hasChildren"
-                            }
-                        }
-                    }
-            );
 
 
 
 
             $("#treeview-right").kendoTreeView({
                 dragAndDrop: true,
-                dataSource: local
+                dataSource: data.items
             }).data("kendoTreeView");
 
 

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82ca797e-7039-44cd-890f-e8309a5543d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/.bin/express" afterPath="$PROJECT_DIR$/server/node_modules/.bin/express" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/editor.html" afterPath="$PROJECT_DIR$/client/editor.html" />
     </list>
     <ignored path="uw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +61,7 @@
       <file leaf-file-name="editor.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/editor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="1" selection-start="522" selection-end="522" vertical-scroll-proportion="0.7407407">
+            <state line="236" column="50" selection-start="7536" selection-end="7536" vertical-scroll-proportion="0.86419755">
               <folding />
             </state>
           </provider>
@@ -432,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="31" selection-start="0" selection-end="791" vertical-scroll-proportion="-5.625">
@@ -474,9 +465,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/editor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="1" selection-start="522" selection-end="522" vertical-scroll-proportion="0.7407407">
+        <state line="236" column="50" selection-start="7536" selection-end="7536" vertical-scroll-proportion="0.86419755">
           <folding />
         </state>
       </provider>

@@ -1,6 +1,6 @@
 var config={};
 //Application path
-config.path = './app';
+config.path = './test/app/server';
 //Services
 config.get = {
 	"/service":{
@@ -12,7 +12,7 @@ config.get = {
 };
 config.post = {};
 config.put = {};
-config.static=['../client/'];
+config.static=['./client/'];
 //Error
 config.error= "/service/error.js";
 //Port

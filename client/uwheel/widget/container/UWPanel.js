@@ -9,18 +9,24 @@ var UWPanel=UWContainer.extend({
        this.title=pTitle||'Untitled';
        this.size=new UWSize('100%','100%');
     },
+    layout:function() {
+        var container=this.me().find('.k-window-content');
+        container.height(this.me().height()-29*2);
+    },
     render:function(parent) {
         if (!this.attached) {
             var e=this.attach(parent);
             return;
         }
-        this.me().css({float:'left',marginRight:'1em'});
-        var wrap=$("<div></div>").addClass('k-widget k-window').attr('style','padding-top: 0px;' +this.size.toStyle()).appendTo(parent);
-        var header=$("<div></div>").addClass('k-window-titlebar k-header').attr('style','margin-top: 0px;').appendTo(wrap);
+        var ME=this.me();
+        ME.css({float:'left',marginRight:'1em'});
+        var wrap=$("<div></div>").addClass('k-widget k-window').attr('style','padding-top: 29px;' +this.size.toStyle()).appendTo(parent);
+        var header=$("<div></div>").addClass('k-window-titlebar k-header').attr('style','margin-top: -29px;').appendTo(wrap);
         $("<span></span>").addClass('k-window-title').attr('style','right: 30px;').text(this.title).appendTo(header);
         $("<div></div>").addClass('k-window-actions').appendTo(header);
         $("<div></div>").addClass('k-window-content k-content').attr('style','min-width: 90px; min-height: 50px;').appendTo(wrap);
         var e=this._super(wrap.find('.k-window-content'));
+
     }
 
 

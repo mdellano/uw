@@ -1,12 +1,14 @@
 var UWWidget=Class.extend({
 	id:null,
+    tag:null,
 	clazz:null,
 	size:null,
 	rendered:null,
     attached:null,
- 	init:function(name) {
+ 	init:function(name,tag) {
 		if (!name) throw new Error('All widget must have a name');
 		this.id=name;
+        this.tag=tag||"<div></div>";
 	},
 	render:function(parent) {
 		if (this.rendered) throw new Error("Widget already rendered");
@@ -32,11 +34,11 @@ var UWWidget=Class.extend({
 		}
 	
 		if (name) {
-			return ($("<div></div>").attr('id',this.id).attr('class',clazz).attr('style',style).appendTo(name));
+			return ($(this.tag).attr('id',this.id).attr('class',clazz).attr('style',style).appendTo(name));
 		} else {
             var e=$('#'+this.id);
             if (!e){
-                return $("<div></div>").attr('id',this.id).attr('class',clazz).attr('style',style).appendTo(uw.application.container);
+                return $(this.tag).attr('id',this.id).attr('class',clazz).attr('style',style).appendTo(uw.application.container);
             } else {
                 return e.attr('class',clazz).attr('style',style);
             }

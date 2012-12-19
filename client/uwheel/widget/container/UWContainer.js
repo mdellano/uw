@@ -16,6 +16,9 @@ var UWContainer=UWWidget.extend({
 		this.childs.push(child);
 		return this;
 	},
+    layout:function() {
+
+    },
 	attach:function(name,style) {
 		var dv=this._super(name,style);
         this.render(dv);
@@ -23,7 +26,10 @@ var UWContainer=UWWidget.extend({
 	    this.addChild=function(child) {
             child.render(dv);
         }
-
+        var ME=this;
+        $(window).on('resize',function(){
+            ME.layout();
+        });
 
     }
 }

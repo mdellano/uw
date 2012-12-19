@@ -8,7 +8,6 @@ var UWTextField=UWWidget.extend({
     render:function(container) {
         var e=this.attach(container);
         e.append('<input>').addClass('k-textbox');
-        return e;
-        // comment nuevamente
+        return e; 
     }
 });

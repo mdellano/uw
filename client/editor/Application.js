@@ -1,9 +1,4 @@
-function resize() {
-    var splitter=$("#contents");
-    splitter.height( $(window).height()-50 );
-    splitter.width( $(document).width() );
 
-}
 
 
 var _data={
@@ -201,7 +196,12 @@ var _data={
     }
 };
 
+function resize() {
+    var splitter=$("#contents");
+    splitter.height( $(window).height()-50 );
+    splitter.width( $(document).width() );
 
+}
 var myApp=UWheel.extend({
 	ready:function(){
         $(window).on('resize',resize);
@@ -209,18 +209,26 @@ var myApp=UWheel.extend({
 
 
         var c=new UWContainer('contents');
-        c.addChild(new UWTextField('fede'));
         c.attach();
-        c.addChild(new UWTextField('fedes'));
+
 
         var project=new Project(_data);
         var view=new ProjectView(project);
 
+        var panel=new UWPanel('panel');
+        panel.size=new UWSize(300,'100%');
+        panel.title='Proyect';
+        panel.addChild(new UWTree('tree',view._data));
+        c.addChild(panel);
 
-    console.log(view._data);
+        var center=new UWPanel('center');
+        center.size=new UWSize(300,'100%');
+        center.title='Proyect';
 
-        c.addChild(new UWTree('tree',view._data));
+        c.addChild(center);
 
+
+        resize();
 	}
 	
 });

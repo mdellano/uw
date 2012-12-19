@@ -1,12 +1,12 @@
 var TreeData=Class.extend({
     text:null,
-    icon:null,
+    imageUrl:null,
     data:null,
     items:null,
     init:function(text,icon,data) {
         this.items=[];
         this.text=text;
-        this.icon=icon;
+        this.imageUrl=icon;
         this.data=data;
     },
     add:function(text,icon,data) {

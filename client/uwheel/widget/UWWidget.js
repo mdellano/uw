@@ -2,7 +2,8 @@ var UWWidget=Class.extend({
 	id:null,
 	clazz:null,
 	size:null,
-	rendered:false,
+	rendered:null,
+    attached:null,
  	init:function(name) {
 		if (!name) throw new Error('All widget must have a name');
 		this.id=name;
@@ -22,6 +23,8 @@ var UWWidget=Class.extend({
 	},
 	attach:function(name,clazz) {
 		if (this.rendered) throw Error("Widget already attached:"+this.id);
+        if (this.attached)  throw Error("Widget already attached:"+this.id);
+        this.attached=true;
 		var nstyle=clazz||this.clazz;
 		var style=null;
 		if (this.size) {

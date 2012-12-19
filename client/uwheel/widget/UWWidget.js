@@ -31,7 +31,12 @@ var UWWidget=Class.extend({
 		if (name) {
 			return ($("<div></div>").attr('id',this.id).attr('class',clazz).attr('style',style).appendTo(name));
 		} else {
-			return ($("<div></div>").attr('id',this.id).attr('class',clazz).attr('style',style).appendTo(uw.application.container));
+            var e=$('#'+this.id);
+            if (!e){
+                return $("<div></div>").attr('id',this.id).attr('class',clazz).attr('style',style).appendTo(uw.application.container);
+            } else {
+                return e.attr('class',clazz).attr('style',style);
+            }
 		}
 	}
 });

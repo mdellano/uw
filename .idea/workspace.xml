@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82ca797e-7039-44cd-890f-e8309a5543d1" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/uwheel/widget/UWContainer.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/container/UWContainer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/uwheel/widget/UWGrid.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/data/UWGrid.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/uwheel/widget/UWTab.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/container/UWTab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/editor.html" afterPath="$PROJECT_DIR$/client/editor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/editor/Application.js" afterPath="$PROJECT_DIR$/client/editor/Application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/editor/css/editor.css" afterPath="$PROJECT_DIR$/client/editor/css/editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/editor/index.html" afterPath="$PROJECT_DIR$/client/editor/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/editor/js/common/Resource.js" afterPath="$PROJECT_DIR$/client/editor/js/common/Resource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/uwheel/common/data/TreeData.js" afterPath="$PROJECT_DIR$/client/uwheel/common/data/TreeData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/uwheel/widget/UWWidget.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/UWWidget.js" />
-    </list>
+    <list default="true" id="82ca797e-7039-44cd-890f-e8309a5543d1" name="Default" comment="" />
     <ignored path="uw.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,7 +59,7 @@
       <file leaf-file-name="editor.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/editor/css/editor.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="1" selection-start="198" selection-end="198" vertical-scroll-proportion="0.1986755">
+            <state line="4" column="20" selection-start="102" selection-end="102" vertical-scroll-proportion="0.06622516">
               <folding />
             </state>
           </provider>
@@ -614,7 +601,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/editor/css/editor.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="198" selection-end="198" vertical-scroll-proportion="0.1986755">
+        <state line="4" column="20" selection-start="102" selection-end="102" vertical-scroll-proportion="0.06622516">
           <folding />
         </state>
       </provider>

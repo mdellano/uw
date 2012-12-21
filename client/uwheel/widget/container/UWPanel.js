@@ -11,7 +11,9 @@ var UWPanel=UWContainer.extend({
     },
     layout:function() {
         var container=this.me().find('.k-window-content');
+        this.me().height(this.me().parent().height()-5);
         container.height(this.me().height()-29*2);
+        console.log('aca',this.id,this.me().parent().height(),this.me().height());
     },
     render:function(parent) {
         if (!this.attached) {

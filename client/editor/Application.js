@@ -204,12 +204,38 @@ function resize() {
 }
 var myApp=UWheel.extend({
 	ready:function(){
-        $(window).on('resize',resize);
-        resize();
+       // $(window).on('resize',resize);
+      //  resize();
+
+        //Viewport
+        var c=new UWViewPort('editor',UWLayout.FILL());
+        c.addChild(new UWContainer('top',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
+        //Center
+        var center=new UWContainer('center',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,1));
+        c.addChild(center);
+        //Left
+        var project=new Project(_data);
+        var view=new ProjectView(project);
+        var left=new UWContainer('left',UWLayout.FILL(),UWLayoutItem.FILL_VERTICAL(250,1));
+        left.addChild(new UWTree('tree',view._data));
+        center.addChild(left);
 
 
-        var c=new UWContainer('contents');
+        //Middle
+        var middle=new UWContainer('middle',UWLayout.FILL(),UWLayoutItem.FILL_VERTICAL(1,1));
+        var panel=new UWPanel('panel');
+        panel.layoutData=UWLayoutItem.FILL_VERTICAL(1,1);
+        middle.addChild(panel);
+        center.addChild(middle);
+
+
+        center.addChild(new UWContainer('right',UWLayout.FILL(),UWLayoutItem.FILL_VERTICAL(250,1)));
+
+        c.addChild(new UWContainer('bottom',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
+
         c.attach();
+        c.adjust();
+        /*
 
 
         var project=new Project(_data);
@@ -221,14 +247,14 @@ var myApp=UWheel.extend({
         panel.addChild(new UWTree('tree',view._data));
         c.addChild(panel);
 
-        var center=new UWPanel('center');
+        var center=;
         center.size=new UWSize(300,'100%');
         center.title='Proyect';
 
         c.addChild(center);
 
-
         resize();
+        */
 	}
 	
 });

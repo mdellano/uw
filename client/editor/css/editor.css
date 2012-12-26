@@ -6,22 +6,9 @@ html {
     font-family: Verdana;
 }
 
-#header {
-    position: absolute;
-    top: 0px;
-    width: 100%;
+.uw-container {
+    border: 0px solid;
+    display: block;
+    float: left;
+}
 
-    height: 25px;
-}
-#contents {
-    position: absolute;
-    top: 25px;
-    height: 100%;
-    overflow: hidden;
-}
-#footer {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 25px;
-}

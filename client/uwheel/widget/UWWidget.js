@@ -5,6 +5,7 @@ var UWWidget=Class.extend({
 	size:null,
 	rendered:null,
     attached:null,
+    layoutData:null,
  	init:function(name,tag) {
 		if (!name) throw new Error('All widget must have a name');
 		this.id=name;

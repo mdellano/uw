@@ -21,6 +21,7 @@ var UWPanel=UWContainer.extend({
             return;
         }
         var ME=this.me();
+        ME.addClass('uw-panel')
         ME.css({float:'left',marginRight:'1em'});
         var wrap=$("<div></div>").addClass('k-widget k-window').attr('style','padding-top: 29px;' +this.size.toStyle()).appendTo(parent);
         var header=$("<div></div>").addClass('k-window-titlebar k-header').attr('style','margin-top: -29px;').appendTo(wrap);

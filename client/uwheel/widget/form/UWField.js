@@ -13,9 +13,15 @@ var UWField=UWWidget.extend({
 
         if (this.label.text) {
             //.css(this.label)
-            e.before($('<label></label>').css(this.label).addClass('k-content').text(this.label.text));
+            e.before($('<label></label>').attr('for',this.id)
+                                         .css(this.label)
+                                         .addClass('k-content')
+                                         .text(this.label.text));
         }
+        e.after($('<span></span>').addClass('k-invalid-msg')
+                                  .attr('data-for',this.id));
         return this.prepare(e);
+
     },
     prepare:function(e) {
         return e;

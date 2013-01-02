@@ -25,6 +25,9 @@ var UWWidget=Class.extend({
 			fn.call(_this,e);
 		};
 	},
+    enrich:function(e) {
+        return e;
+    },
 	attach:function(name,clazz) {
 		if (this.rendered) throw Error("Widget already attached:"+this.id);
         if (this.attached)  throw Error("Widget already attached:"+this.id);
@@ -36,11 +39,11 @@ var UWWidget=Class.extend({
 		}
 	
 		if (name) {
-			return ($(this.tag).attr('id',this.id).addClass(classStyle).attr('style',style).appendTo(name));
+			return (this.enrich($(this.tag).attr('id',this.id).attr('name',this.id).addClass(classStyle).attr('style',style)).appendTo(name));
 		} else {
             var e=$('#'+this.id);
             if (!e){
-                return $(this.tag).attr('id',this.id).addClass(classStyle).attr('style',style).appendTo(uw.application.container);
+                return this.enrich($(this.tag).attr('id',this.id).attr('name',this.id).addClass(classStyle).attr('style',style)).appendTo(uw.application.container);
             } else {
                 return e.addClass(classStyle).attr('style',style);
             }

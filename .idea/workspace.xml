@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82ca797e-7039-44cd-890f-e8309a5543d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/UWBr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/field/UWComboField.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/field/UWDateField.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/field/UWNumberField.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextArea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTimeField.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/UWFieldRule.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/editor/Application.js" afterPath="$PROJECT_DIR$/client/editor/Application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/editor/index.html" afterPath="$PROJECT_DIR$/client/editor/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/uwheel/widget/UWWidget.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/UWWidget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/uwheel/widget/form/UWField.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/UWField.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextField.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextField.js" />
     </list>
     <ignored path="uw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,28 +29,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/editor/Application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="247" column="9" selection-start="6890" selection-end="6890" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UWForm.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="14" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UWNumberField.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWNumberField.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+            <state line="52" column="15" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -59,16 +41,16 @@
       <file leaf-file-name="UWWidget.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/uwheel/widget/UWWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="26" column="5" selection-start="576" selection-end="627" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UWTextField.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UWTextField.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextField.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="95" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+            <state line="22" column="33" selection-start="460" selection-end="460" vertical-scroll-proportion="0.44444445">
               <folding />
             </state>
           </provider>
@@ -92,10 +74,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editor.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="editor.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/editor/css/editor.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="1" selection-start="148" selection-end="148" vertical-scroll-proportion="0.3472222">
+            <state line="10" column="1" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/editor/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="56" selection-start="2206" selection-end="2206" vertical-scroll-proportion="-12.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/editor/Application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="250" column="44" selection-start="7028" selection-end="7028" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,16 +104,16 @@
       <file leaf-file-name="UWField.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWField.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UWTextArea.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextArea.js">
+      <file leaf-file-name="UWFieldRule.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWFieldRule.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="10" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+            <state line="15" column="4" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,22 +132,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/uwheel/widget/layout/UWLayout.js" />
         <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWTextField.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/UWWidget.js" />
         <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWBr.js" />
         <option value="$PROJECT_DIR$/client/uw.html" />
-        <option value="$PROJECT_DIR$/client/editor/index.html" />
         <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWDateField.js" />
         <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextArea.js" />
-        <option value="$PROJECT_DIR$/client/editor/Application.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextField.js" />
         <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTimeField.js" />
         <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWNumberField.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWField.js" />
         <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWComboField.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js" />
         <option value="$PROJECT_DIR$/client/editor/css/editor.css" />
+        <option value="$PROJECT_DIR$/client/editor/index.html" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWField.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWFieldRule.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js" />
+        <option value="$PROJECT_DIR$/client/editor/Application.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/UWWidget.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextField.js" />
       </list>
     </option>
   </component>
@@ -619,7 +619,11 @@
       <created>1357086511697</created>
       <updated>1357086511697</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Form suport and field support">
+      <created>1357086591902</created>
+      <updated>1357086591902</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -680,7 +684,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="New form support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Form suport and field support" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -699,6 +703,7 @@
     <MESSAGE value="Se agrego soporte para layouts the Widgets" />
     <MESSAGE value="New changelist" />
     <MESSAGE value="New form support" />
+    <MESSAGE value="Form suport and field support" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -706,11 +711,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/editor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -726,21 +726,9 @@
         <state line="26" column="72" selection-start="971" selection-end="979" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/editor/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="58" selection-start="1712" selection-end="1712" vertical-scroll-proportion="-8.416667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWDateField.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="39" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/editor/Application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="247" column="9" selection-start="6890" selection-end="6890" vertical-scroll-proportion="0.0">
+        <state line="9" column="39" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -759,20 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/UWWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWField.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWTimeField.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="39" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
@@ -780,9 +754,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextField.js">
+    <entry file="file://$PROJECT_DIR$/client/editor/css/editor.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="95" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+        <state line="10" column="1" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/editor/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="56" selection-start="2206" selection-end="2206" vertical-scroll-proportion="-12.0">
           <folding />
         </state>
       </provider>
@@ -794,16 +775,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js">
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWFieldRule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+        <state line="15" column="4" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/editor/css/editor.css">
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="148" selection-end="148" vertical-scroll-proportion="0.3472222">
+        <state line="52" column="15" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/editor/Application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="250" column="44" selection-start="7028" selection-end="7028" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/UWWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="5" selection-start="576" selection-end="627" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="33" selection-start="460" selection-end="460" vertical-scroll-proportion="0.44444445">
           <folding />
         </state>
       </provider>

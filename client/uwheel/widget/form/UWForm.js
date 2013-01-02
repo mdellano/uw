@@ -38,6 +38,24 @@ var UWForm=UWContainer.extend({
         this.addChild(f);
         return this;
     },
+    addEmailField:function(model,label) {
+        var f=UWTextField.asEmail(model);
+        f.label.text=label;
+        this.addChild(f);
+        return this;
+    },
+    addURLField:function(model,label) {
+        var f=UWTextField.asURL(model);
+        f.label.text=label;
+        this.addChild(f);
+        return this;
+    },
+    addPasswordField:function(model,label) {
+        var f=UWTextField.asPassword(model);
+        f.label.text=label;
+        this.addChild(f);
+        return this;
+    },
     addLineBreak:function() {
         this.addChild(new UWBr());
         return this;

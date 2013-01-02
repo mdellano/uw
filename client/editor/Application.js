@@ -232,18 +232,23 @@ var myApp=UWheel.extend({
         panel.addTextField('id',"ID");
         panel.addLineBreak();
         panel.addTextField('name','Nombre');
-        panel.addTextField('lastname','Apellido');
         panel.addLineBreak();
+        panel.addTextField('lastname','Apellido');
+       // panel.addLineBreak();
         panel.addTextField('address','Direccion');
+        panel.addLineBreak();
         panel.addTextField('city','Ciudad');
 
         panel.addLineBreak();
         panel.addNumericField('cp',"Codigo Postal:");
+        //panel.addLineBreak();
         panel.addDateField('date',"Alta");
         panel.addLineBreak();
         panel.addComboField('type',"Tipo");
+        panel.addLineBreak();
         panel.addTimeField('time','Hora');
 
+        panel.addEmailField('email','Correo');
         panel.addLineBreak();
 
 

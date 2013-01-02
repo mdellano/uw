@@ -223,10 +223,30 @@ var myApp=UWheel.extend({
 
         //Middle
         var middle=new UWContainer('middle',UWLayout.FILL(),UWLayoutItem.FILL_VERTICAL(1,1));
-        var panel=new UWPanel('panel');
+        var panel=new UWForm('panel');
+        panel.legend='Form loco';
         panel.layoutData=UWLayoutItem.FILL_VERTICAL(1,1);
         middle.addChild(panel);
         center.addChild(middle);
+
+        panel.addTextField('id',"ID");
+        panel.addLineBreak();
+        panel.addTextField('name','Nombre');
+        panel.addTextField('lastname','Apellido');
+        panel.addLineBreak();
+        panel.addTextField('address','Direccion');
+        panel.addTextField('city','Ciudad');
+
+        panel.addLineBreak();
+        panel.addNumericField('cp',"Codigo Postal:");
+        panel.addDateField('date',"Alta");
+        panel.addLineBreak();
+        panel.addComboField('type',"Tipo");
+        panel.addTimeField('time','Hora');
+
+        panel.addLineBreak();
+
+
 
 
         center.addChild(new UWContainer('right',UWLayout.FILL(),UWLayoutItem.FILL_VERTICAL(250,1)));

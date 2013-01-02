@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82ca797e-7039-44cd-890f-e8309a5543d1" name="Default" comment="New changelist">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextField.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/uwheel/widget/form/UWTextField.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/editor/Application.js" afterPath="$PROJECT_DIR$/client/editor/Application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/editor/css/editor.css" afterPath="$PROJECT_DIR$/client/editor/css/editor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/editor/index.html" afterPath="$PROJECT_DIR$/client/editor/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/uw.html" afterPath="$PROJECT_DIR$/client/uw.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/uwheel/widget/UWWidget.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/UWWidget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/uwheel/widget/form/UWField.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/UWField.js" />
     </list>
     <ignored path="uw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,52 +33,25 @@
       <file leaf-file-name="Application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/editor/Application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="206" column="22" selection-start="5387" selection-end="5387" vertical-scroll-proportion="0.0">
+            <state line="247" column="9" selection-start="6890" selection-end="6890" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UWLayoutItem.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/layout/UWLayoutItem.js">
+      <file leaf-file-name="UWForm.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="56" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0">
+            <state line="11" column="14" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editor.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/editor/css/editor.css">
+      <file leaf-file-name="UWNumberField.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWNumberField.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="16" selection-start="207" selection-end="207" vertical-scroll-proportion="0.38283062">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/editor/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="4" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UWViewPort.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/viewport/UWViewPort.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="27" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UWheel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/uwheel/common/UWheel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,34 +60,61 @@
       <file leaf-file-name="UWWidget.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/uwheel/widget/UWWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="18" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UWContainer.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/container/UWContainer.js">
+      <file leaf-file-name="UWTextField.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextField.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="4" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+            <state line="0" column="95" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Class.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/uwheel/common/Class.js">
+      <file leaf-file-name="UWTimeField.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWTimeField.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="24" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.0">
+            <state line="2" column="39" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UWLayout.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/layout/UWLayout.js">
+      <file leaf-file-name="UWComboField.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWComboField.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="26" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.0">
+            <state line="13" column="43" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editor.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/editor/css/editor.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="1" selection-start="148" selection-end="148" vertical-scroll-proportion="0.3472222">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UWField.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWField.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="33" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UWTextArea.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextArea.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="10" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,21 +133,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/editor/common/Resource.js" />
-        <option value="$PROJECT_DIR$/client/editor/project/view/ProjectView.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/container/UWWindow.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/common/data/TreeData.js" />
-        <option value="$PROJECT_DIR$/client/editor/js/common/Resource.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWTextField.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWField.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/container/UWPanel.js" />
-        <option value="$PROJECT_DIR$/client/editor/index.html" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/UWWidget.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/container/UWContainer.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/viewport/UWViewPort.js" />
-        <option value="$PROJECT_DIR$/client/uwheel/widget/layout/UWLayoutItem.js" />
         <option value="$PROJECT_DIR$/client/uwheel/widget/layout/UWLayout.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWTextField.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/UWWidget.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWBr.js" />
+        <option value="$PROJECT_DIR$/client/uw.html" />
+        <option value="$PROJECT_DIR$/client/editor/index.html" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWDateField.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextArea.js" />
         <option value="$PROJECT_DIR$/client/editor/Application.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextField.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWTimeField.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWNumberField.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWField.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/field/UWComboField.js" />
+        <option value="$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js" />
         <option value="$PROJECT_DIR$/client/editor/css/editor.css" />
       </list>
     </option>
@@ -175,6 +183,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -247,13 +256,260 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="viewport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uwheel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uwheel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uwheel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="field" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uwheel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uwheel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="container" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uwheel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uwheel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,11 +528,11 @@
       <recent name="$PROJECT_DIR$/server/test/app/client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/uwheel/widget/form/field" />
       <recent name="$PROJECT_DIR$/client/isotope" />
       <recent name="$PROJECT_DIR$/client/editor/resource" />
       <recent name="$PROJECT_DIR$/client/editor" />
       <recent name="$PROJECT_DIR$/client" />
-      <recent name="$PROJECT_DIR$/client/uwheel/widget/container" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.Runner">
@@ -367,20 +623,20 @@
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20112915" sideWeight="0.6374502" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20112915" sideWeight="0.6387782" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3625498" sideWeight="0.99435425" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834226" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3612218" sideWeight="0.99435425" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -446,102 +702,102 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/uwheel/common/data/TreeData.js">
+    <entry file="file://$PROJECT_DIR$/client/editor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="376" selection-end="657" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWField.js">
+    <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWTextField.js">
+    <entry file="file://$PROJECT_DIR$/client/uw.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="301" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/container/UWTab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="37" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/container/UWWindow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" />
+        <state line="41" column="38" selection-start="928" selection-end="928" vertical-scroll-proportion="-10.125" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/uwheel/widget/container/UWPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="536" selection-end="660" vertical-scroll-proportion="0.0" />
+        <state line="26" column="72" selection-start="971" selection-end="979" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/editor/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0">
+        <state line="31" column="58" selection-start="1712" selection-end="1712" vertical-scroll-proportion="-8.416667" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWDateField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/editor/Application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="247" column="9" selection-start="6890" selection-end="6890" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/common/Class.js">
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextArea.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="24" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.0">
+        <state line="14" column="10" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/layout/UWLayoutItem.js">
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWNumberField.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="56" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/container/UWContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+        <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/uwheel/widget/UWWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/common/UWheel.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/viewport/UWViewPort.js">
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWField.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+        <state line="17" column="33" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/layout/UWLayout.js">
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWTimeField.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="26" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.0">
+        <state line="2" column="39" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/editor/Application.js">
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWTextField.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="22" selection-start="5387" selection-end="5387" vertical-scroll-proportion="0.0">
+        <state line="0" column="95" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/field/UWComboField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="43" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="14" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/editor/css/editor.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="207" selection-end="207" vertical-scroll-proportion="0.38283062">
+        <state line="10" column="1" selection-start="148" selection-end="148" vertical-scroll-proportion="0.3472222">
           <folding />
         </state>
       </provider>

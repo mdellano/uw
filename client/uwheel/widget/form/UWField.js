@@ -1,27 +1,24 @@
 var UWField=UWWidget.extend({
-    validators:null,
-    init:function(name) {
-        this._super(name);
-        validators=[];
+    config:null,
+    label:null,
+    init:function(name,tag,clazz) {
+        this._super(name,tag,clazz);
+        this.label={text:null,width:'100px',textAlign:'right'};
+        this.config={required:true};
     },
-    addValidator:function(pFn,pType) {
-        var type=pType||UWField.Select;
-        pFn.type=pType;
-        this.validators.push(pFn);
-    },
-    ready:function(dom){
-        for (var i=i<this.validators.length;i++) {
-            var fn=this.validators[i];
-            switch (fn.type) {
-                case UWField.Select
+    render:function(container) {
+        var e=this.attach(container);
+        e.addClass('uw-field');
+         e.attr('required','true');
 
-            }
-
+        if (this.label.text) {
+            //.css(this.label)
+            e.before($('<label></label>').css(this.label).addClass('k-content').text(this.label.text));
         }
+        return this.prepare(e);
+    },
+    prepare:function(e) {
+        return e;
     }
 
 });
-
-UWField.Select=1;
-UWField.LostFocus=2;
-UWField.EnterFocus=3;

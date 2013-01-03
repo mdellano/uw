@@ -21,7 +21,7 @@ var UWContainer=UWWidget.extend({
 	addChild:function(child) {
 		if (!(child instanceof UWWidget)) throw new Error('All child must be of UWWidget type');
 		this.childs.push(child);
-		return this;
+		return child;
 	},
     layout:function() {
 

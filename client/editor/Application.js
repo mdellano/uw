@@ -209,7 +209,8 @@ var myApp=UWheel.extend({
 
         //Viewport
         var c=new UWViewPort('editor',UWLayout.FILL());
-        c.addChild(new UWContainer('top',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
+        var top=c.addChild(new UWContainer('top',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
+        top.clazz='top-bar';
         //Center
         var center=new UWContainer('center',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,1));
         c.addChild(center);
@@ -223,18 +224,61 @@ var myApp=UWheel.extend({
 
         //Middle
         var middle=new UWContainer('middle',UWLayout.FILL(),UWLayoutItem.FILL_VERTICAL(1,1));
-        var panel=new UWPanel('panel');
+
+
+        //Arranca el form
+        var panel=new UWForm('panel');
+        panel.legend='Form loco';
         panel.layoutData=UWLayoutItem.FILL_VERTICAL(1,1);
         middle.addChild(panel);
         center.addChild(middle);
 
+        panel.addTextField('id',"ID").rules.addRequired();
+        panel.addLineBreak();
+        panel.addTextField('name','Nombre').rules.addCustom('ns','Esto no anda!!',function(input){
+            return input.val()=='ff';
+        });
+        panel.addLineBreak();
+        panel.addTextField('lastname','Apellido');
+       // panel.addLineBreak();
+        panel.addTextField('address','Direccion');
+        panel.addLineBreak();
+        panel.addTextField('city','Ciudad');
 
+        panel.addLineBreak();
+        panel.addNumericField('cp',"Codigo Postal:").rules.addRange(10,100,1,"Los numeros no pueden exceder este rango");
+        //panel.addLineBreak();
+        panel.addDateField('date',"Alta");
+        panel.addLineBreak();
+        panel.addComboField('type',"Tipo");
+        panel.addLineBreak();
+        panel.addTimeField('time','Hora');
+
+        panel.addEmailField('email','Correo');
+        panel.addLineBreak();
+
+
+
+        window.panel=panel;
         center.addChild(new UWContainer('right',UWLayout.FILL(),UWLayoutItem.FILL_VERTICAL(250,1)));
 
         c.addChild(new UWContainer('bottom',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
 
         c.attach();
         c.adjust();
+
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+                read: "/fede",
+            }
+        });
+
+        dataSource.bind("requestEnd", function(e) {
+            console.log(dataSource.data, e.response);
+        });
+
+        dataSource.fetch();
+
         /*
 
 

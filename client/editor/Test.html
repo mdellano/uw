@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script>
+        var Class= function() {
+                this.caca=function() {alert('toString')}
+        };
+
+
+        Class.extend=function(obj) {
+            cl=function() {};
+            cl.prototype=new this();
+            return cl;
+        }
+
+
+        var Diego=Class.extend({ name:'diego'});
+
+
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>

@@ -6,9 +6,48 @@ html {
     font-family: Verdana;
 }
 
+
+.uw-fieldset {
+
+
+}
 .uw-container {
     border: 0px solid;
     display: block;
     float: left;
 }
 
+.uw-fieldset
+{
+    width: 100%;
+    float:left;
+    margin:0;
+    padding: 10px 0 30px 0;
+}
+.uw-fieldset li
+{
+    list-style:none;
+    padding:5px 0;
+}
+.uw-fieldset li label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    padding-right: 4px;
+}
+
+span.k-tooltip
+{
+    position: inherit;
+    display: inline-block;
+    border: 1px solid #adff2f;
+    padding: 0;
+    left: -1px;
+    color: green;
+}
+
+
+
+.top-bar {
+    background-color: #000000;
+}

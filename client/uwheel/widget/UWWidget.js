@@ -6,10 +6,11 @@ var UWWidget=Class.extend({
 	rendered:null,
     attached:null,
     layoutData:null,
- 	init:function(name,tag) {
-		if (!name) throw new Error('All widget must have a name');
+ 	init:function(name,tag,clazz) {
+		if (!name&&tag!='<br>') throw new Error('All widget must have a name');
 		this.id=name;
         this.tag=tag||"<div></div>";
+        this.clazz=clazz;
 	},
 	render:function(parent) {
 		if (this.rendered) throw new Error("Widget already rendered");
@@ -24,24 +25,27 @@ var UWWidget=Class.extend({
 			fn.call(_this,e);
 		};
 	},
+    enrich:function(e) {
+        return e;
+    },
 	attach:function(name,clazz) {
 		if (this.rendered) throw Error("Widget already attached:"+this.id);
         if (this.attached)  throw Error("Widget already attached:"+this.id);
         this.attached=true;
-		var nstyle=clazz||this.clazz;
+		var classStyle=clazz||this.clazz;
 		var style=null;
 		if (this.size) {
 			style=this.size.toStyle();
 		}
 	
 		if (name) {
-			return ($(this.tag).attr('id',this.id).attr('class',clazz).attr('style',style).appendTo(name));
+			return (this.enrich($(this.tag).attr('id',this.id).attr('name',this.id).addClass(classStyle).attr('style',style)).appendTo(name));
 		} else {
             var e=$('#'+this.id);
             if (!e){
-                return $(this.tag).attr('id',this.id).attr('class',clazz).attr('style',style).appendTo(uw.application.container);
+                return this.enrich($(this.tag).attr('id',this.id).attr('name',this.id).addClass(classStyle).attr('style',style)).appendTo(uw.application.container);
             } else {
-                return e.attr('class',clazz).attr('style',style);
+                return e.addClass(classStyle).attr('style',style);
             }
 		}
 	}

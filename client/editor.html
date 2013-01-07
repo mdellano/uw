@@ -37,31 +37,13 @@ function UWData(text,icon,data) {
 
     <script>
 
-
-
-
         $(document).ready(function(){
-
-            function resize() {
-                var splitter=$("#contents");
-                splitter.height( $(window).height()-50 );
-                splitter.width( $(document).width() );
-
-            }
-            $(window).on('resize',resize);
-            resize();
 
 
             var data=new UWData('Proyecto','','');
             data.addData('Scenes','');
             data.addData('Actors','');
             data.addData('Actions','');
-
-
-
-
-
-
 
 
             $("#treeview-right").kendoTreeView({
@@ -79,7 +61,7 @@ function UWData(text,icon,data) {
         body * { margin: 0px; padding: 0px; }
 
         html {
-            font-size: small;
+            font-size: minimal;
         }
         #editor {
             width: 1024px;
@@ -115,7 +97,7 @@ function UWData(text,icon,data) {
 <div id="editor">
     <div id="header">header</div>
     <div id="contents">
-        <div id="treeview-right"></div>
+        <div id="treeview-right" style="border:1px"></div>
     </div>
     <div id="footer">footer</div>
 </div>

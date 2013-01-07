@@ -200,20 +200,21 @@ function resize() {
     var splitter=$("#contents");
     splitter.height( $(window).height()-50 );
     splitter.width( $(document).width() );
-
 }
+
+
 var myApp=UWheel.extend({
 	ready:function(){
        // $(window).on('resize',resize);
       //  resize();
 
         //Viewport
-        var c=new UWViewPort('editor',UWLayout.FILL());
-        var top=c.addChild(new UWContainer('top',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
+        var viewPort=new UWViewPort('editor',UWLayout.FILL());
+        var top=viewPort.addChild(new UWContainer('top',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
         top.clazz='top-bar';
         //Center
         var center=new UWContainer('center',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,1));
-        c.addChild(center);
+        viewPort.addChild(center);
         //Left
         var project=new Project(_data);
         var view=new ProjectView(project);
@@ -262,14 +263,14 @@ var myApp=UWheel.extend({
         window.panel=panel;
         center.addChild(new UWContainer('right',UWLayout.FILL(),UWLayoutItem.FILL_VERTICAL(250,1)));
 
-        c.addChild(new UWContainer('bottom',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
+        viewPort.addChild(new UWContainer('bottom',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
 
-        c.attach();
-        c.adjust();
+        viewPort.attach();
+        viewPort.adjust();
 
         var dataSource = new kendo.data.DataSource({
             transport: {
-                read: "/fede",
+                read: "/fede"
             }
         });
 

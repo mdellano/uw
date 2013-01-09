@@ -8,7 +8,11 @@ config.get = {
 	},
 	"/fede": {
 		services:['/fede/daleloco.js','/service/get']
-	}
+	},
+    "/savepartner": {
+        services: ['/partner/save.js']
+    }
+
 };
 config.post = {};
 config.put = {};

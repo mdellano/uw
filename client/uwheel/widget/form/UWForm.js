@@ -97,8 +97,8 @@ var UWForm=UWContainer.extend({
         this.addChild(f);
         return f;
     },
-    addComboField:function(model,label) {
-        var f=new UWComboField(model);
+    addComboField:function(model,label,dataSource) {
+        var f=new UWComboField(model,dataSource);
         f.label.text=label;
         this.addChild(f);
         return f;

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82ca797e-7039-44cd-890f-e8309a5543d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/uwheel/widget/menu/UWMenu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/UWForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/uwheel/widget/form/field/UWComboField.js" afterPath="$PROJECT_DIR$/client/uwheel/widget/form/field/UWComboField.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/config.js" afterPath="$PROJECT_DIR$/server/config.js" />
     </list>
     <ignored path="uw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -694,7 +690,11 @@
       <created>1357584266461</created>
       <updated>1357584266461</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Agrego UWMenu en el brach actual.">
+      <created>1357755293181</created>
+      <updated>1357755293181</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">

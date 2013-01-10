@@ -1,0 +1,65 @@
+{
+    "version":"UWheel 0.01b",
+    "fields":{
+        "id":{
+            "label":"ID",
+            "type":"text",
+            "required":true,
+            "br":1
+        },
+        "name":{
+            "label":"Nombre",
+            "type":"text",
+            "required":true,
+            "validations":{
+                "ns":{
+                    "text":"Debe comenzar con mayusculas",
+                    "validate": function(input) {
+return input.val()[0] == input.val()[0].toUpperCase();
+}
+}
+},
+br:1
+},
+lastname: {
+label: "Apellido",
+type: "text",
+validations: {
+ns: {
+text: "Debe comenzar con mayusculas",
+validate: function(input) {
+if ( !input.val() ) return true;
+return input.val()[0] == input.val()[0].toUpperCase();
+}
+}
+},
+br:1
+},
+address: {
+label: "Direcion",
+type: "text"
+},
+city: {
+label: "City",
+type: "text",
+br:1
+},
+cp: {
+label: "CP",
+type: "numeric",
+min: 0,
+max: 9999,
+step: 100
+},
+edad: {
+label: "Edad",
+type: "numeric",
+max: 3
+},
+num: {
+label: "Numero",
+type: "numeric"
+}
+
+}
+}

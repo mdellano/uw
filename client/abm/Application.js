@@ -1,274 +1,153 @@
 
 
 
-var _data={
+var _formConf={
     "version": "UWheel 0.01b",
-    "profiles": {
-        "images": {
-            "name": "images",
-            "type": "img"
+    fields: {
+        id: {
+            label: "ID",
+            type: UWForm.FIELD_TYPE.TEXT,
+            required: true,
+            br: 1
         },
-        "sounds": {
-            "name": "sounds",
-            "type": "sound"
-        }
-    },
-    "symbols": {
-        "kindle negro.jpg": {
-            "type": "image",
-            "profile": "images"
-        },
-        "/axes.png": {
-            "type": "image",
-            "profile": "images"
-        }
-    },
-    "stack": {
-    },
-    "actions": {
-        "1926_privateAction": {
-            "children": [
-            ],
-            "params": {
-            }
-        }
-    },
-    "mediaobjects": {
-        "Actor": {
-            "register": true,
-            "name": "Actor",
-            "position": "UWPosition(0,0)",
-            "anchor": "UWPosition(0,0)",
-            "size": "UWSize(0,0)",
-            "rotation": 0,
-            "flip": "UWFlip(false,false)",
-            "texture": "UWFormat('kindle negro.jpg')",
-            "opacity": 100,
-            "attributes": {
-            },
-            "messages": {
-                'find': {
-                    name:'find'
-                }
-            },
-            "children": {
-            }
-        },
-        "Background": {
-            "register": true,
-            "name": "Background",
-            "type": "Layer",
-            "prototype": "Layer",
-            "attributes": {
-            },
-            "messages": {
-            },
-            "children": {
-                "Actor1": {
-                    "register": true,
-                    "position": "UWPosition(0,0)",
-                    "anchor": "UWPosition(0,0)",
-                    "size": "UWSize(0,0)",
-                    "rotation": 0,
-                    "flip": "UWFlip(false,false)",
-                    "scale": "UWScale(100,100)",
-                    "texture": "UWFormat('kindle negro.jpg')",
-                    "zorder": 4096,
-                    "opacity": 100,
-                    "locked": false,
-                    "visible": true,
-                    "attributes": {
-                    },
-                    "prototype": "Actor",
-                    "messages": {
-                    },
-                    "children": {
+        name: {
+            label: "Nombre",
+            type: UWForm.FIELD_TYPE.TEXT,
+            required: true,
+            validations: {
+                ns: {
+                    text: "Debe comenzar con mayusculas",
+                    validate: function(input) {
+                        return input.val()[0] == input.val()[0].toUpperCase();
                     }
                 }
-            }
+            },
+            br:1
         },
-        "Game": {
-            "register": true,
-            "name": "Game",
-            "type": "Layer",
-            "prototype": "Layer",
-            "attributes": {
-            },
-            "messages": {
-            },
-            "children": {
-            }
-        },
-        "Control": {
-            "register": true,
-            "name": "Control",
-            "type": "Layer",
-            "prototype": "Layer",
-            "attributes": {
-            },
-            "messages": {
-            },
-            "children": {
-            }
-        },
-        "Main": {
-            "register": true,
-            "name": "Main",
-            "position": "UWPosition(0,0)",
-            "anchor": "UWPosition(0,0)",
-            "size": "UWSize(0,0)",
-            "rotation": 0,
-            "flip": "UWFlip(false,false)",
-            "texture": "",
-            "type": "Scene",
-            "prototype": "Scene",
-            "attributes": {
-            },
-            "messages": {
-            },
-            "children": {
-                "Background": {
-                    "register": true,
-                    "locked": false,
-                    "visible": true,
-                    "attributes": {
-                    },
-                    "prototype": "Background",
-                    "type": "Layer",
-                    "messages": {
-                    }
-                },
-                "Game": {
-                    "register": true,
-                    "locked": false,
-                    "visible": true,
-                    "attributes": {
-                    },
-                    "prototype": "Game",
-                    "type": "Layer",
-                    "messages": {
-                    }
-                },
-                "Control": {
-                    "register": true,
-                    "locked": false,
-                    "visible": true,
-                    "attributes": {
-                    },
-                    "prototype": "Control",
-                    "type": "Layer",
-                    "messages": {
+        lastname: {
+            label: "Apellido",
+            type: UWForm.FIELD_TYPE.TEXT,
+            validations: {
+                ns: {
+                    text: "Debe comenzar con mayusculas",
+                    validate: function(input) {
+                        if ( !input.val() ) return true;
+                        return input.val()[0] == input.val()[0].toUpperCase();
                     }
                 }
-            }
+            },
+            br:1
         },
-        "dummy_anonymous": {
-            "name": "dummy_anonymous",
-            "position": "UWPosition(0,0)",
-            "size": "UWSize(0,0)",
-            "rotation": 0,
-            "attributes": {
-            },
-            "messages": {
-            },
-            "texture": ""
+        address: {
+            label: "Direcion",
+            type: UWForm.FIELD_TYPE.TEXT
         },
-        "dummy_button": {
-            "name": "dummy_button",
-            "position": "UWPosition(0,0)",
-            "size": "UWSize(0,0)",
-            "type": "Button",
-            "rotation": 0,
-            "attributes": {
-            },
-            "messages": {
-            },
-            "texture": ""
+        city: {
+            label: "City",
+            type: UWForm.FIELD_TYPE.TEXT,
+            br:1
+        },
+        cp: {
+            label: "CP",
+            type: UWForm.FIELD_TYPE.NUMERIC,
+            min: 0,
+            max: 9999,
+            step: 100
+        },
+        edad: {
+            label: "Edad",
+            type: UWForm.FIELD_TYPE.NUMERIC,
+            max: 3
+        },
+        num: {
+            label: "Numero",
+            type: UWForm.FIELD_TYPE.NUMERIC
         }
-    },
-    "instance": {
-        "main": {
-            "prototype": "Main",
-            "register": true,
-            "children": {
-            }
-        }
+
     }
 };
 
-function resize() {
-    var splitter=$("#contents");
-    splitter.height( $(window).height()-50 );
-    splitter.width( $(document).width() );
-}
 
 
 var myApp=UWheel.extend({
 	ready:function(){
 
         //Viewport
-        var viewPort=new UWViewPort('editor',UWLayout.FILL());
+//        var viewPort=new UWViewPort('editor',UWLayout.FILL());
 
-        var top=viewPort.addChild(new UWContainer('top',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
-        top.clazz='top-bar';
-        var menu = new UWMenu('menu');
-        var partner = menu.addItem('partner','Socios');
-        partner.addItem('new','Nuevo').addItem('vitalicio','Vitalicio');
-        partner.addItem('open','Abrir');
-        partner.addItem('search','Search');
-        menu.addItem('options','Opciones').addItem('preferences','Preferencias');
-        top.addChild(menu);
+//        var top=viewPort.addChild(new UWContainer('top',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
+//        top.clazz='top-bar';
+
+//        //Creo el menu
+//        var menu = new UWMenu('menu');
+//
+//        //Menu de Socios
+//        var partner = menu.addItem('partner', 'Socios');
+//        var newPartner = partner.addItem('new', 'Nuevo');
+//
+//        partner.addItem('delete','Eliminar');
+//        partner.addItem('open', 'Abrir');
+//        partner.addItem('search', 'Search');
+//
+//        //Menu de Opciones
+//        menu.addItem('options', 'Opciones').addItem('preferences', 'Preferencias');
+//        top.addChild(menu);
 
         //Arranca el form
-        var panel=new UWForm('panel');
-        panel.legend='Form loco';
-        panel.layoutData=UWLayoutItem.FILL_HORIZONTAL(1,1);
-        viewPort.addChild(panel);
+//        var panel = UWForm.build('panel',{});
+//        viewPort.addChild(panel);
+//
+//        panel.addTextField('id',"ID").rules.addRequired();
+//        panel.addLineBreak();
+//        panel.addTextField('name','Nombre').rules.addCustom('ns','Debe comenzar con mayuscula!!',function(input){
+//            return input.val()[0] == input.val()[0].toUpperCase();
+//        });
+//        panel.addLineBreak();
+//        panel.addTextField('lastname','Apellido').rules.addCustom('ns','Debe comenzar con mayuscula!!',function(input){
+//            return input.val()[0] == input.val()[0].toUpperCase();
+//        });
+//       // panel.addLineBreak();
+//        panel.addTextField('address','Direccion');
+//        panel.addLineBreak();
+//        panel.addTextField('city','Ciudad');
+//
+//        panel.addLineBreak();
+//        panel.addNumericField('cp',"Codigo Postal:").rules.addRange(0,9999,1,"Los numeros no pueden exceder este rango");
+//        panel.addNumericField('edad',"Edad:").rules.addRange(null,null,null,"Los numeros no pueden exceder este rango");
+//        //panel.addLineBreak();
+//        panel.addDateField('date',"Alta");
+//        panel.addLineBreak();
+//
+//        var comboDataSource = new kendo.data.DataSource({
+//            transport: {
+//                read: "/service"
+//            }
+//        });
+//        var combo = panel.addComboField('type',"Tipo",comboDataSource);
+//        //[{text: 'Normal',value:'1'},{text: 'Vitalicio',value:'2'}]
+//        panel.addLineBreak();
+//        panel.addTimeField('time','Hora');
+//
+//        panel.addEmailField('email','Correo');
+//        panel.addLineBreak();
+//
+//        panel.addNumericField('num',"Numero:");
 
-        panel.addTextField('id',"ID").rules.addRequired();
-        panel.addLineBreak();
-        panel.addTextField('name','Nombre').rules.addCustom('ns','Debe comenzar con mayuscula!!',function(input){
-            return input.val()[0] == input.val()[0].toUpperCase();
-        });
-        panel.addLineBreak();
-        panel.addTextField('lastname','Apellido').rules.addCustom('ns','Debe comenzar con mayuscula!!',function(input){
-            return input.val()[0] == input.val()[0].toUpperCase();
-        });
-       // panel.addLineBreak();
-        panel.addTextField('address','Direccion');
-        panel.addLineBreak();
-        panel.addTextField('city','Ciudad');
+//        var form = UWForm.build('editor',_formConf);
+//        viewPort.addChild(form);
 
-        panel.addLineBreak();
-        panel.addNumericField('cp',"Codigo Postal:").rules.addRange(0,9999,1,"Los numeros no pueden exceder este rango");
-        //panel.addLineBreak();
-        panel.addDateField('date',"Alta");
-        panel.addLineBreak();
+//        form.attach();
+//        form.adjust();
 
-        var comboDataSource = new kendo.data.DataSource({
-            transport: {
-                read: "/service"
-            }
-        });
-        var combo = panel.addComboField('type',"Tipo",comboDataSource);
-        //[{text: 'Normal',value:'1'},{text: 'Vitalicio',value:'2'}]
-        panel.addLineBreak();
-        panel.addTimeField('time','Hora');
-
-        panel.addEmailField('email','Correo');
-        panel.addLineBreak();
-
-
-
-        window.panel=panel;
+//        window.panel=panel;
 //        center.addChild(new UWContainer('right',UWLayout.FILL(),UWLayoutItem.FILL_VERTICAL(250,1)));
 
 //        viewPort.addChild(new UWContainer('bottom',UWLayout.FILL(),UWLayoutItem.FILL_HORIZONTAL(1,30)));
 
 
 
-        viewPort.attach();
-        viewPort.adjust();
+//        viewPort.attach();
+//        viewPort.adjust();
 
         var dataSource = new kendo.data.DataSource({
             transport: {
@@ -281,8 +160,6 @@ var myApp=UWheel.extend({
         });
 
         dataSource.fetch();
-
-//        $("#menu").kendoMenu();
 
 
     }

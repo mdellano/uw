@@ -109,6 +109,70 @@ var UWForm=UWContainer.extend({
         this.addChild(f);
         return f;
     }
-
-
 });
+
+/* Enums */
+UWForm.FIELD_TYPE = {
+    TEXT:'text',
+    NUMERIC:'numeric'
+}
+
+/* Public Class Methods  */
+UWForm.attachTo = function(name,config) {
+    var form = UWForm.build(name,config);
+    form.attach();
+}
+
+UWForm.build = function (name,config) {
+    var form = new UWForm(name);
+    form.layoutData=UWLayoutItem.FILL_HORIZONTAL(1,1);
+
+    //Si tiene fields lo cargo directamente.
+    if ( config.fields ) {
+
+    }
+    //Si tiene URL busco el JSON desde el server
+    if ( config.url ) {
+
+    }
+
+    for (var name in config.fields || [] ) {
+        var field = config.fields[name];
+        if ( field.type == UWForm.FIELD_TYPE.TEXT ) {
+            UWForm._processAsField(form,name,field);
+        } else if ( field.type == UWForm.FIELD_TYPE.NUMERIC ) {
+            UWForm._processAsNumeric(form,name,field);
+        }
+    }
+
+    return form;
+}
+
+
+/* Private Class Methods */
+UWForm._processAsNumeric = function(form,name,field) {
+    var nf = form.addNumericField(name, field.label);
+    if (field.required) nf.rules.addRequired();
+    for (var valname in field.validations) {
+        var val = field.validations[valname];
+        nf.rules.addCustom(valname, val.text, val.validate);
+    }
+    if ( field.min || field.max || field.step ) nf.rules.addRange(field.min,field.max,field.step,"Los numeros no pueden exceder este rango");
+    for (var i = 0; i < field.br || 0; i++) {
+        form.addLineBreak();
+    }
+}
+
+UWForm._processAsField = function(form,name,field) {
+    var tf = form.addTextField(name,field.label);
+    if ( field.required ) tf.rules.addRequired();
+    for ( var valname in field.validations ) {
+        var val = field.validations[valname];
+        tf.rules.addCustom(valname,val.text,val.validate);
+    }
+    for ( var i = 0; i < field.br || 0; i++ ) {
+        form.addLineBreak();
+    }
+}
+
+

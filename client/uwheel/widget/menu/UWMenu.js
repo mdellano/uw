@@ -9,11 +9,19 @@ var UWMenu=UWWidget.extend({
             var ul = $('<ul></ul>').appendTo(e);
             for (var i = 0; i < subitems.length; i++) {
                 var item = subitems[i];
-                var valor = item.text;
-                if ( handler ) {
-                    valor = '<a>' + valor + '</a>';
+                var anchor = $('<a></a>');
+                $('<span>'+item.text+'</span>').appendTo(anchor);
+                if ( item.handlers.length != 0 ) {
+                    var call = function() {
+                        for ( var handler in item.handlers ) {
+                            item.handlers[handler]();
+                        }
+                    };
+                    anchor.attr('onclick',call);
                 }
-                var li = $('<li>' + valor + '</li>');
+
+                var li = $('<li></li>');
+                anchor.appendTo(li);
                 li.attr('name', item.name);
                 li.appendTo(ul);
 
@@ -30,8 +38,8 @@ var UWMenu=UWWidget.extend({
             var ul = this.addUL(e,this.items);
             ul.kendoMenu(this.config);
         },
-        addItem: function(name, text, items, handler) {
-            var item = new UWItem(name,text,items,handler);
+        addItem: function (name, text, handler) {
+            var item = new UWItem(name,text,handler);
             this.items.push(item);
             return item;
         }
@@ -42,17 +50,21 @@ var UWItem=Class.extend({
     name: null,
     text: null,
     items: [],
-    handler: null,
-    init: function(name, text, items, handler) {
+    handlers: [],
+    init: function(name, text, handler) {
         this.name = name;
         this.text = text || name;
-        this.items = items || [];
-        this.handler = handler;
+        this.handlers = [];
+        if ( handler ) this.handlers.push(handler);
+        this.items = [];
     },
-    addItem: function(name, text, items, handler) {
-        var item = new UWItem(name,text,items,handler);
+    addItem: function( name, text, handler ) {
+        var item = new UWItem(name,text,handler);
         this.items.push(item);
         return item;
+    },
+    addHandler: function( handler ) {
+        if ( handler ) this.handlers.push( handler );
     }
 });
 

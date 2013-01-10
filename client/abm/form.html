@@ -39,11 +39,11 @@
 
     <!-- Editor specific -->
     <link href="./css/editor.css" rel="stylesheet">
-    <script src="./Application.js"></script>
+
     <script>
         var myApp=UWheel.extend({
             ready:function(){
-                UWForm.attachTo('editor',_formConf);
+                UWForm.attachTo('editor',{url:'form.json'});
             }
         });
         new myApp();

@@ -119,22 +119,31 @@ UWForm.FIELD_TYPE = {
 
 /* Public Class Methods  */
 UWForm.attachTo = function(name,config) {
-    var form = UWForm.build(name,config);
-    form.attach();
+
+    //Si tiene URL busco el JSON desde el server
+    if ( config.url ) {
+        $.ajax({
+            url: config.url,
+            type: 'get',
+            error: function(data){
+                alert("error: " + data.responseText);
+            },
+            success: function(data){
+                var form = UWForm.build(name,data);
+                form.attach();
+            }
+        });
+    } else {
+        var form = UWForm.build(name,config);
+        form.attach();
+    }
+
 }
 
 UWForm.build = function (name,config) {
     var form = new UWForm(name);
     form.layoutData=UWLayoutItem.FILL_HORIZONTAL(1,1);
 
-    //Si tiene fields lo cargo directamente.
-    if ( config.fields ) {
-
-    }
-    //Si tiene URL busco el JSON desde el server
-    if ( config.url ) {
-
-    }
 
     for (var name in config.fields || [] ) {
         var field = config.fields[name];

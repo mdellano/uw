@@ -11,10 +11,18 @@ config.get = {
 	},
     "/savepartner": {
         services: ['/partner/save.js']
+    },
+    "/form-save": {
+        services: ['/form/save.js']
+    },
+    "/form-load": {
+        services: ['/form/load.js']
     }
 
 };
-config.post = {};
+config.post = {
+
+};
 config.put = {};
 config.static=['./client/'];
 //Error

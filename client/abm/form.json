@@ -1,7 +1,8 @@
 {
     "version":"UWheel 0.01b",
+    "collection": "user",
     "fields":{
-        "id":{
+        "_id":{
             "label":"ID",
             "type":"text",
             "required":true,
@@ -29,7 +30,7 @@
             "max":9999,
             "step":100
         },
-        "edad":{
+        "age":{
             "label":"Edad",
             "type":"numeric",
             "max":3

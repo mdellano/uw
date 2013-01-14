@@ -33,6 +33,7 @@
     <script src="../uwheel/widget/form/field/UWComboField.js"></script>
     <script src="../uwheel/widget/form/field/UWTimeField.js"></script>
     <script src="../uwheel/widget/form/field/UWTextArea.js"></script>
+    <script src="../uwheel/widget/form/field/UWSubmit.js"></script>
     <script src="../uwheel/widget/form/UWForm.js"></script>
     <!-- ViewPort -->
     <script src="../uwheel/widget/viewport/UWViewPort.js"></script>
@@ -41,9 +42,38 @@
     <link href="./css/editor.css" rel="stylesheet">
 
     <script>
+        function createForm(_id) {
+            UWForm.attachTo('editor', {
+                url:'form.json', //Con estas lineas intervengo en el guardado y muestro el div que necesito.
+                onSave:function (save) {
+                    save.invoke(function (data) {
+                        $("#result").show();
+                    });
+
+                },
+                _id:_id
+            });
+        }
         var myApp=UWheel.extend({
             ready:function(){
-                UWForm.attachTo('editor',{url:'form.json'});
+                createForm();
+                $("#input").kendoAutoComplete({
+                    dataSource: {
+                        transport: {
+                            read: "/form-load?collection=user&nsql="
+                        }
+                    },
+                    dataTextField: "name",
+                    placeholder: "Select user... start typing",
+                    select: function(e) {
+                        var dataItem = this.dataItem(e.item.index());
+                        $("#editor").empty();
+
+                        createForm(dataItem._id);
+                    }
+                });
+
+
             }
         });
         new myApp();
@@ -51,8 +81,20 @@
 </head>
 <!-- DOM -->
 <body>
-<div id="editor">
+<div id="example" class="k-content">
+    <label for="input" class="info">Choose users:</label>
 
+    <input id="input" />
+
+    <div class="hint">Search users</div>
+
+    <form id="editor">
+
+    </form>
+    <div id="result" style="background: red;display: none">
+        Congratulations! Successfull UPDATE!
+    </div>
 </div>
+</form>
 </body>
 </html>

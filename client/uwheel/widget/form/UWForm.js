@@ -2,10 +2,16 @@ var UWForm=UWContainer.extend({
     legend:null,
     config:null,
     validator:null,
+    buttons: null,
+    submit: null,
+    model: null,
     init:function(name,layout,layoutData) {
-      this._super(name,layout,layoutData);
-      this.config={cols:['50%','50%']};
-      this.tag='<form></form>';
+        this._super(name, layout, layoutData);
+        this.config = {cols:['50%', '50%']};
+        this.tag = '<form></form>';
+        this.buttons = [];
+        this.submit = null;
+        this.model = {};
     },
     render:function(parent) {
         if (this.attached) {
@@ -46,11 +52,30 @@ var UWForm=UWContainer.extend({
 
             }
             ul.appendTo(parent);
+
+            if ( this.submit ) {
+                var btn = $('<button>'+this.submit.caption+'</button>');
+                btn.addClass('k-button');
+                var ME = this;
+                parent.submit(function(e) {
+                    if ( ME.submit.handler ) {
+                        e.preventDefault();
+                        ME.submit.handler();
+                    }
+                });
+                btn.appendTo(parent);
+            }
+
             this.validator=parent.kendoValidator(customs).data('kendoValidator');
+            if ( this.ready ) this.ready();
         } else {
             this.attach(parent);
         }
 
+    },
+    setSubmit: function(caption,handler) {
+        //Save Button
+        this.submit = {caption:caption,handler:handler};
     },
     addTextField:function(model,label) {
         var f=new UWTextField(model);
@@ -108,6 +133,20 @@ var UWForm=UWContainer.extend({
         f.label.text=label;
         this.addChild(f);
         return f;
+    },
+    setModel: function(model) {
+        this.model = model;
+        for (var i=0;i<this.childs.length;i++) {
+            var field= $('#' + this.childs[i].id) ;
+            field.val(this.model[this.childs[i].id]);
+        }
+    },
+    getModel: function() {
+        for (var i=0;i<this.childs.length;i++) {
+            var field=this.childs[i];
+            this.model[field.id] = field.me().val();
+        }
+        return this.model;
     }
 });
 
@@ -120,6 +159,47 @@ UWForm.FIELD_TYPE = {
 /* Public Class Methods  */
 UWForm.attachTo = function(name,config) {
 
+    function create(name,data) {
+        var form = UWForm.build(name,data);
+        var saveFn = function() {
+            var save = {
+                model: null,
+                invoke: function(onFinish) {
+                    var params = {
+                        model: this.model,
+                        collection: data.collection
+                    };
+                    $.get("/form-save", params, function(data) {
+                        if ( onFinish ) onFinish(data);
+                    });
+                }
+            };
+            save.model = form.getModel();
+            if ( config.onSave ) {
+                config.onSave(save);
+            } else {
+                save.invoke();
+            }
+        }
+
+        form.setSubmit("Guardar",saveFn);
+        if ( config._id ) {
+            form.ready = function () {
+                var params = {
+                    collection: data.collection,
+                    nsql: {"_id":config._id}
+                };
+                $.get("/form-load",params,function(data){
+                    if ( data[0] ) {
+                        form.setModel(data[0]);
+                    }
+                });
+            }
+        }
+
+        form.attach();
+    }
+
     //Si tiene URL busco el JSON desde el server
     if ( config.url ) {
         $.ajax({
@@ -129,13 +209,11 @@ UWForm.attachTo = function(name,config) {
                 alert("error: " + data.responseText);
             },
             success: function(data){
-                var form = UWForm.build(name,data);
-                form.attach();
+                create(name,data);
             }
         });
     } else {
-        var form = UWForm.build(name,config);
-        form.attach();
+        create(name,config);
     }
 
 }
@@ -153,6 +231,12 @@ UWForm.build = function (name,config) {
             UWForm._processAsNumeric(form,name,field);
         }
     }
+
+//    if ( config.save ) {
+//        var submit = $("<input type='submit' value='Save'>").appendTo(form);
+//        form.addLineBreak();
+//        form.addSubmit('submit','Guardar');
+//    }
 
     return form;
 }
